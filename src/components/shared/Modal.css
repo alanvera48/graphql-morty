@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.modal{
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100vh;
+	background: rgba(0,0,0,0.30);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	color: #000;
+}
+
+.modal.is-open{
+	display: flex;
+}
+
+.modal-container{
+	background: #fff;
+	border: 2px solid #C6C3C3;
+    border-radius: 20px;
+    color: #000;
+	position: relative;
+	width: 50%;
+	height: auto;
+	overflow-y: hidden;
+
+}
+
+.modal-close{
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	border: none;
+    background: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-card{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-card > div{
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start
+
+}

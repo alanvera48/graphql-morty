@@ -1,0 +1,41 @@
+.acountContainer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    /* background-color:skyblue; */
+    align-items: center;
+    margin-top: 3em;
+
+   
+}
+.acountContainer h3{
+    font-size: 16px;
+
+}
+.acountContainer span{
+    font-size: 16px;
+ color:#6C727E;
+
+}
+.containerCheck{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+
+}
+.containerTextArea{
+    width: 30%;
+    border: 0.3px solid #000000;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    border-radius: 2px;
+
+}
+.containerTextArea span{
+    font-size: 16px;
+    color:#6C727E;
+
+}

@@ -1,0 +1,11 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.notFound span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}

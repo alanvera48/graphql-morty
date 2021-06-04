@@ -43,10 +43,9 @@ export  function EpisodeGraph(id) {
         variables:{episodeId: id},
     });
   
-    if (loading) return null;
+    if (loading) return true;
+
     if (error) return null;
-     
-        console.log('Single',data)
         let ep= data.episodesByIds[0]
         return ep
  

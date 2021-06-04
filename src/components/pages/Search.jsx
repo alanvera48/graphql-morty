@@ -13,23 +13,22 @@ export default function Search() {
   setEpisode(EpisodeGraph(search))
 
   let load;
-  if (episode !== null) {
-    load = (
-      <Cards
-        episodeName={episode.name}
-        image={`https://rickandmortyapi.com/api/character/avatar/${episode.id}.jpeg`}
-        date={episode.air_date}
-        key={episode.id}
-      ></Cards>
-    );
-  } else {
-    load = (
+  if (episode === true) {
+    load = <img src="images/circles.svg"/>
+    }else if(episode){
+      load =  (
+        <Cards
+          episodeName={episode.name}
+          image={`https://rickandmortyapi.com/api/character/avatar/${episode.id}.jpeg`}
+          date={episode.air_date}
+          key={episode.id}></Cards>);
+      }else if(episode === null || episode == ""){
+     load = (
       <div className="notFound">
         <img src="images/NotFoundImage.png" alt="notFound"></img>
         <span>Not Found</span>
       </div>
     );
   }
-
   return <div className="card-container">{load}</div>;
 }
